@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Coffee Brew Recipes</title>
+</head>
+<body>
+    <div class="container">
+        <!-- title -->
+        <header class="text-center ">
+            <h2 class="display-3 text-primary">Coffee Brew Recipes</h2>
+            <h4 class="text-muted">Add custom recipes for your home brews below</h4>
+        </header>
+
+        <div class="container">
+            <!-- form -->
+            <form action="" id="recipe-form" class="p-4 m-4 row shadow-sm rouded-3 border border-primary">
+                <div class="form-group col-md-4 my-2">
+                    <label for="name">Name of Recipe</label>
+                    <input id="name" placeholder="e.g., Morning Brew" type="text"  class="form-control" placeholder="Enter name of Recipe " required autocomplete="off" >
+                </div>
+                <div class="form-group col-md-4 my-2">
+                    <label for="name">Brew method</label>
+                    <input id="method" placeholder="e.g.,v60 Pour Over" type="text"  class="form-control" placeholder="Enter brew method" required autocomplete="off" >
+                </div>
+                <div class="form-group col-md-4 my-2">
+                    <label for="name">Roast</label>
+                    <input id="roast" placeholder="e.g.,Full City" type="text"  class="form-control" required autocomplete="off" >
+                </div>
+
+                <div class="form-group col-md-4 my-2">
+                    <label for="name">Grind Size</label>
+                    <input id="size" placeholder="e.g.,30" type="text"  class="form-control" placeholder="Enter name of Recipe " required autocomplete="off" >
+                </div>
+                <div class="form-group col-md-4 my-2">
+                    <label for="name">Ratio</label>
+                    <input id="ratio"  placeholder="e.g.,1:16" type="text" class="form-control" placeholder="Enter brew method" required autocomplete="off" >
+                </div>
+                <div class="form-group col-md-4 my-2">
+                    <label for="note">Notes (optional) </label>
+                    <input  id="note" type="text" class="form-control" required autocomplete="off" >
+                </div>
+                 
+                <!-- button -->
+                <div class="form-group m4">
+                    <button type="submit" class="btn  btn-primary">App Recipe</button>
+                </div>
+            </form>
+
+            <div>
+                <div class="row m-3 border-bottom border-3 border-primary">
+                    <p class="h2 text-primary">Save Recipe</p>
+                </div>
+                <div id="recipe-order"class=" row row-cols-1 row-cols-md-3 text-center" ></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
